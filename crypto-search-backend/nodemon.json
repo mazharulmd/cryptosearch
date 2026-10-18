@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "uploads/*",
+    "downloads/*",
+    "encrypted/*",
+    "temporary-files/*",
+    "logs/*"
+  ]
+}

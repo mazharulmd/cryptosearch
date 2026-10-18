@@ -1,0 +1,9 @@
+.toast {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.toastProgressBar {
+  /* background: dodgerblue; */
+}

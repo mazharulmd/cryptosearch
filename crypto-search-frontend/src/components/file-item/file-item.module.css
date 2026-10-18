@@ -1,0 +1,23 @@
+.container {
+  background-color: rgb(255, 212, 131);
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: dodgerblue;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: left;
+  color: black;
+}
+
+.fileName {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.fileId {
+  font-size: 12px;
+}

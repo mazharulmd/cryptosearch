@@ -1,0 +1,144 @@
+{
+  "apiVersion": "",
+  "host": "http://127.0.0.1:3001",
+  "basePath": "/api",
+  "routeMap": {
+    "version": 1,
+    "dateModified": "02-May-2022",
+    "routes": {
+      "login": {
+        "method": "POST",
+        "path": "/users/login",
+        "body": [
+          "email",
+          "password"
+        ],
+        "description": "For user login."
+      },
+      "register": {
+        "method": "POST",
+        "path": "/users/register",
+        "body": [
+          "email",
+          "password"
+        ],
+        "description": "For user registration."
+      },
+      "validateGoogleDriveAuthorization": {
+        "method": "GET",
+        "path": "/users/validate-google-drive-authorization",
+        "headers": [
+          "authorization?"
+        ],
+        "description": "Validates Google Drive authorization."
+      },
+      "revokeGoogleDriveAuthorization": {
+        "method": "DELETE",
+        "path": "/users/google-drive-authorize",
+        "headers": [
+          "authorization?"
+        ],
+        "description": "Revokes Google Drive authorization."
+      },
+      "generateSecretKey": {
+        "method": "GET",
+        "path": "/keys/generate-secret/{folderId}",
+        "headers": [
+          "authorization"
+        ],
+        "queries": [
+          "forceRegenerate?"
+        ],
+        "description": "Generates secret key."
+      },
+      "generateRsaKeyPair": {
+        "method": "GET",
+        "path": "/keys/generate-rsa",
+        "headers": [
+          "authorization"
+        ],
+        "description": "Generates RSA key pair."
+      },
+      "retrieveAllFiles": {
+        "method": "GET",
+        "path": "/files",
+        "headers": [
+          "authorization"
+        ],
+        "queries": [
+          "limit?",
+          "pageToken?",
+          "folderId?"
+        ],
+        "description": "Retrieves list of all files."
+      },
+      "shareFile": {
+        "method": "GET",
+        "path": "/files/share/{email}/{fileId}",
+        "headers": [
+          "authorization?"
+        ],
+        "description": "Shares a file via Google Drive."
+      },
+      "getFileDecryptionKey": {
+        "method": "POST",
+        "path": "/files/key/{fileId}",
+        "body": [
+          "publicKey"
+        ],
+        "headers": [
+          "authorization"
+        ],
+        "description": "Retrieves file decryption key."
+      },
+      "downloadFile": {
+        "method": "POST",
+        "path": "/files/download/{fileId}",
+        "headers": [
+          "authorization?"
+        ],
+        "body": [
+          "privateKey",
+          "encryptedDecryptionKey"
+        ],
+        "description": "Downloads requested file."
+      },
+      "searchFiles": {
+        "method": "GET",
+        "path": "/files/search/{folderId}",
+        "headers": [
+          "authorization?"
+        ],
+        "queries": [
+          "keyword",
+          "includeFileInfo?"
+        ],
+        "description": "Looks for files by keyword."
+      },
+      "uploadFiles": {
+        "method": "POST",
+        "path": "/files",
+        "headers": [
+          "authorization?"
+        ],
+        "form": [
+          "folderId?",
+          "files[]"
+        ],
+        "description": "Uploads files."
+      },
+      "generateIndex": {
+        "method": "PUT",
+        "path": "/files/index",
+        "headers": [
+          "authorization?"
+        ],
+        "body": [
+          "folderId",
+          "index"
+        ],
+        "description": "Generates file index."
+      }
+    }
+  }
+}

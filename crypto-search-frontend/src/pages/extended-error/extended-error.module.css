@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  display: none;
+}
+.dashBoardContainer{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.dashBoardContents{
+
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+
+  gap: 2em;
+}
+.dashBoardContentsBody{
+  width: 100%;
+  height:100%;
+  background: #fff;
+  border-radius: 1em;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+.dashBoardContentsBodyData{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}

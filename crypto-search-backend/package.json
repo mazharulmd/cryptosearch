@@ -1,0 +1,29 @@
+{
+  "name": "crypto-search-backend",
+  "version": "1.0.0",
+  "description": "A web application to search on encrypted data over the cloud.",
+  "main": "src/application.js",
+  "author": "Mazharul Islam",
+  "scripts": {
+    "start": "node src/application.js",
+    "dev": "nodemon src/application.js"
+  },
+  "dependencies": {
+    "@shahadul-17/random-generator": "^0.0.1",
+    "@shahadul-17/uid-generator": "^0.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.0",
+    "express-fileupload": "^1.3.1",
+    "googleapis": "^100.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.5.0",
+    "nodemailer": "^6.7.5",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
