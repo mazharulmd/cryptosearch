@@ -114,3 +114,6 @@ downloads/
 encrypted/
 temporary-files/
 package-lock.json
+
+# Local sample data
+backend.json

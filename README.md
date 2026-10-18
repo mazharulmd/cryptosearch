@@ -24,6 +24,7 @@ CryptoSearch lets users encrypt files before they leave the server, store them i
 - [API Reference](#api-reference)
 - [Troubleshooting](#troubleshooting)
 - [Security Notes](#security-notes)
+- [Author](#author)
 - [License](#license)
 
 ---
@@ -323,6 +324,12 @@ All routes are prefixed with `/api`. Routes marked 🔒 need an `Authorization: 
 - **Never commit** `crypto-search-backend/.env` or `google-api-credentials.json`. Both are already in `.gitignore`.
 - Use strong, unique values for `JWT_SECRET_KEY` and `RSA_PRIVATE_KEY_PASSPHRASE` in every environment.
 - This project is an academic and research prototype of searchable encryption. Review it carefully before you use it in production. For example, the AES initialization vector in `configuration.js` is fixed, and keyword encryption is deterministic.
+
+## Author
+
+**Mazharul Islam** ([@mazharulmd](https://github.com/mazharulmd))
+
+Based on original work by Md. Shahadul Alam Patwary.
 
 ## License
 

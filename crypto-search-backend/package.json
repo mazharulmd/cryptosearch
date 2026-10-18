@@ -4,6 +4,9 @@
   "description": "A web application to search on encrypted data over the cloud.",
   "main": "src/application.js",
   "author": "Mazharul Islam",
+  "contributors": [
+    "Md. Shahadul Alam Patwary"
+  ],
   "scripts": {
     "start": "node src/application.js",
     "dev": "nodemon src/application.js"

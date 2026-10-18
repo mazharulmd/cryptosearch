@@ -2,7 +2,10 @@
   "name": "crypto-search-frontend",
   "version": "1.0.0",
   "description": "A web application to search on encrypted data over the cloud.",
-  "author": "Md. Shahadul Alam Patwary",
+  "author": "Mazharul Islam",
+  "contributors": [
+    "Md. Shahadul Alam Patwary"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
